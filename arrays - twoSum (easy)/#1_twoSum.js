@@ -24,3 +24,4 @@
 // think in plain english
 // devise a solution with no code
 
+// Step 4: Write out brute force solution
