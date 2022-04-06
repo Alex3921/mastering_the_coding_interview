@@ -24,4 +24,32 @@
 // think in plain english
 // devise a solution with no code
 
+
 // Step 4: Write out brute force solution
+// const findTwoSum = function  (nums, target) {
+//     for(let p1 = 0; p1 < nums.length; p1++) {
+//         const numberToFind = target - nums[p1]
+
+//         for(p2 = p1 + 1; p2 < nums.length; p2++) {
+//             if(numberToFind === nums[p2]) {
+//                 return [p1,p2]
+//             }
+//         }
+//     }
+
+//     return null;
+// }
+
+
+// Step 5: Double check for errors
+// code should be ready to be copied in a terminal and run
+
+
+// Step 6: Do a dry run of the code using test case
+// this will show the interviewer that you understand
+// how your code works
+
+
+// Step 7: Analyzing the Space and Time complexity
+// Time complexity: O(n^2)
+// Space complexity: O(1)
