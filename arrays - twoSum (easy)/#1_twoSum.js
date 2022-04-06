@@ -21,3 +21,6 @@
 
 
 // Step 3: Figure out a solution without code
+// think in plain english
+// devise a solution with no code
+
