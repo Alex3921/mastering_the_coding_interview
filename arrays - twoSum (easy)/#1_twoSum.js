@@ -56,19 +56,25 @@
 
 
 // Step 8: Optimize solution
-const findTwoSum = function (nums, target) {
-    const numsMap = {};
-    for(let p = 0; p < nums.length; p++) {
-        const currentMapVal = numsMap[nums[p]];
+// const findTwoSum = function (nums, target) {
+//     const numsMap = {};
+//     for(let p = 0; p < nums.length; p++) {
+//         const currentMapVal = numsMap[nums[p]];
 
-        if(currentMapVal >= 0){
-            return [currentMapVal, p];
-        } else {
-            const numberToFind = target - nums[p];
+//         if(currentMapVal >= 0){
+//             return [currentMapVal, p];
+//         } else {
+//             const numberToFind = target - nums[p];
 
-            numsMap[numberToFind] = p;
-        };
-    };
+//             numsMap[numberToFind] = p;
+//         };
+//     };
 
-    return null;
-}
+//     return null;
+// }
+
+
+// Repeat step 6
+// Repeat step 7
+// Time: O(n)
+// Space: O(n)
