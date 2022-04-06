@@ -18,3 +18,6 @@
 // [],          t = 1,  return null
 // [5],         t = 5,  return null
 // [1,6],       t = 7,  return [0,1]
+
+
+// Step 3: Figure out a solution without code
