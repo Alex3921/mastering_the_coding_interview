@@ -53,3 +53,22 @@
 // Step 7: Analyzing the Space and Time complexity
 // Time complexity: O(n^2)
 // Space complexity: O(1)
+
+
+// Step 8: Optimize solution
+const findTwoSum = function (nums, target) {
+    const numsMap = {};
+    for(let p = 0; p < nums.length; p++) {
+        const currentMapVal = numsMap[nums[p]];
+
+        if(currentMapVal >= 0){
+            return [currentMapVal, p];
+        } else {
+            const numberToFind = target - nums[p];
+
+            numsMap[numberToFind] = p;
+        };
+    };
+
+    return null;
+}
