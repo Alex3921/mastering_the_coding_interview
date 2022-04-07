@@ -18,3 +18,9 @@
 // [8]          => return 0
 // [6,9,3,4,5,8]=> return [1,5]
 
+
+// Step 3: Figure out a solution without code
+// [7,1,2,3,9]
+// area = l x w
+// min(a,b) x (bi-ai) -- bi = right most index; ai = left most index
+// min(7,1) x (1-0)
