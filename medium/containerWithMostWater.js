@@ -31,12 +31,39 @@
 //     let maxArea = 0;
 //     for(let i = 0; i < arr.length; i++) {
 //         for(let j = 0; j < arr.length; j++) {
-//             let area = Math.min(arr[i], arr[j]) * (j - i)
-//             if(area > maxArea) {
-//                 maxArea = area;
-//             }
+//             const height = Math.min(arr[i], arr[j]);
+//             const width = j - i;
+//             const area = height * width;
+//             maxArea = Math.max(maxArea, area);
 //         }
 //     }
 
 //     return maxArea;
 // }
+
+// Time complexity: O(n^2)
+// Space complexity: O(1)
+
+
+// Step 5: Optimal solution
+// const mostWater = function (height) {
+//     let maxArea = 0;
+//     let left = 0;
+//     let right = height.length-1;
+//     while(left < right) {
+//         const minHeight = Math.min(height[left], height[right]);
+//         const width = right - left;
+//         const area = minHeight * width;
+//         maxArea = Math.max(maxArea, area);
+//         if(height[left] <= height[right]) {
+//             left++;
+//         } else {
+//             right--;
+//         }
+//     }
+
+//     return maxArea;
+// }
+
+// Time complexity: O(n)
+// Space complexity: O(1)
