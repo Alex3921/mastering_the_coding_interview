@@ -1,7 +1,7 @@
 // Statement: You are given an array of positive integers where each integer 
 // represents the height of a vertical line on a chart. 
 // Find two lines which together with the x-axis forms a container that would 
-// hold the greatest amount of water. Return the are of water it would hold.
+// hold the greatest amount of water. Return the area of water it would hold.
 
 
 // Step 1: Verify the constrains
@@ -16,7 +16,7 @@
 // Step 2: Coming up with test cases
 // []           => return 0
 // [8]          => return 0
-// [6,9,3,4,5,8]=> return [1,5]
+// [6,9,3,4,5,8]=> return maxArea
 
 
 // Step 3: Figure out a solution without code
@@ -24,3 +24,19 @@
 // area = l x w
 // min(a,b) x (bi-ai) -- bi = right most index; ai = left most index
 // min(7,1) x (1-0)
+
+
+// Step 4: Brute force solution
+// const mostWater = function (arr) {
+//     let maxArea = 0;
+//     for(let i = 0; i < arr.length; i++) {
+//         for(let j = 0; j < arr.length; j++) {
+//             let area = Math.min(arr[i], arr[j]) * (j - i)
+//             if(area > maxArea) {
+//                 maxArea = area;
+//             }
+//         }
+//     }
+
+//     return maxArea;
+// }
