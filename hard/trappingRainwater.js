@@ -17,31 +17,35 @@
 
 
 // Step 3: Coding the brute force solution
-const trappingRainwater = function (height) {
-    let totalWater = 0;
-    for(let p = 0; p < height.length; p++) {
-        let leftP = p;
-        let rightP = p;
-        let maxLeft = 0;
-        let maxRight = 0;
+// const trappingRainwater = function (height) {
+//     let totalWater = 0;
+//     for(let p = 0; p < height.length; p++) {
+//         let leftP = p;
+//         let rightP = p;
+//         let maxLeft = 0;
+//         let maxRight = 0;
 
-        while(leftP >= 0) {
-            maxLeft = Math.max(maxLeft, height[leftP]);
-            leftP--;
-        }
+//         while(leftP >= 0) {
+//             maxLeft = Math.max(maxLeft, height[leftP]);
+//             leftP--;
+//         }
 
-        while(rightP < height.length) {
-            maxRight = Math.max(maxRight, height[rightP]);
-            rightP++;
-        }
+//         while(rightP < height.length) {
+//             maxRight = Math.max(maxRight, height[rightP]);
+//             rightP++;
+//         }
 
-        const currentWater = Math.min(maxLeft, maxRight) - height[p];
-        if(currentWater >= 0) {
-            totalWater += currentWater;
-        }
-    }
-    console.log(totalWater);
-    return totalWater;
-}
+//         const currentWater = Math.min(maxLeft, maxRight) - height[p];
+//         if(currentWater >= 0) {
+//             totalWater += currentWater;
+//         }
+//     }
+//     console.log(totalWater);
+//     return totalWater;
+// }
 
-trappingRainwater([3,4,3])
+// Time complexity: O(n^2)
+// Space complexity: O(1)
+
+
+// Step 4: Optimize the solution
