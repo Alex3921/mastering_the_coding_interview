@@ -16,3 +16,32 @@
 // [3,4,3]                 => return 0
 
 
+// Step 3: Coding the brute force solution
+const trappingRainwater = function (height) {
+    let totalWater = 0;
+    for(let p = 0; p < height.length; p++) {
+        let leftP = p;
+        let rightP = p;
+        let maxLeft = 0;
+        let maxRight = 0;
+
+        while(leftP >= 0) {
+            maxLeft = Math.max(maxLeft, height[leftP]);
+            leftP--;
+        }
+
+        while(rightP < height.length) {
+            maxRight = Math.max(maxRight, height[rightP]);
+            rightP++;
+        }
+
+        const currentWater = Math.min(maxLeft, maxRight) - height[p];
+        if(currentWater >= 0) {
+            totalWater += currentWater;
+        }
+    }
+    console.log(totalWater);
+    return totalWater;
+}
+
+trappingRainwater([3,4,3])
