@@ -82,3 +82,6 @@ const trappingRainwater = function(height) {
         return total;
     }
 }
+
+// Time complexity: O(n)
+// Space complexity: O(1)
