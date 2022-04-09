@@ -49,3 +49,12 @@
 
 
 // Step 4: Optimize the solution
+const trappingRainwater = function(height) {
+    // Identify pointer with lesser value
+    // Is this pointer value greater than or equal to max on that side
+        // yes => update max on that side
+        // no => get water for pointer value, add to total
+    // move pointer inwards
+    // repeat for other pointer
+
+}
