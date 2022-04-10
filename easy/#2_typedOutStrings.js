@@ -59,3 +59,18 @@
 // Space complexity: O(a+b)
 
 
+// Step 4: Optimize the solution
+const typedOutStrings = function (s,t) {
+    for(let i = s.length-1; i >= 0; i--) {
+        if(s[i] !== t[i]) {
+            return false;
+        }
+    }
+    console.log("true")
+    return true;
+}
+
+typedOutStrings("abc#d", "abd")
+
+// Time complexity: O(n)
+// Space complexity: O(1)
